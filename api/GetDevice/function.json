@@ -20,9 +20,9 @@
       "name": "devices",
       "type": "cosmosDB",
       "direction": "in",
-      "databaseName": "geba",
-      "collectionName": "devices",
-      "sqlQuery": "SELECT c.id, c.room FROM c",
+      "databaseName": "testswa",
+      "collectionName": "eventi",
+      "sqlQuery": "SELECT c.nome, c.biglietti FROM c",
       "connectionStringSetting": "CosmosDBConnection"    
     }
   ]
