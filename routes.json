@@ -1,16 +1,22 @@
 {
-    "routes": [
-      {
-        "route": "/api/*",
-        "allowedRoles": ["anonymous"]
-      }
-
+  "routes": [
+    {
+      "route": "/api/ticket",
+      "allowedRoles": ["reader"]
       
-    ],
-    "platformErrorOverrides": [
-      {
-        "errorType": "NotFound",
-        "serve": "/custom-404.html"
-      }
-    ]
+    },
+    {
+      "route": "/api/device",
+      "allowedRoles": ["anonymous"]
+      
+    }
+
+    
+  ],
+  "responseOverrides": {
+    "401": {
+      "statusCode": 302,
+      "redirect": "/.auth/login/github"
+    }
   }
+}
