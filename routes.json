@@ -6,6 +6,11 @@
       
     },
     {
+      "route": "/index2.html",
+      "allowedRoles": ["writer"]
+      
+    },
+    {
       "route": "/api/check",
       "allowedRoles": ["anonymous"]
       
