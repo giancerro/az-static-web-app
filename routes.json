@@ -1,7 +1,7 @@
 {
   "routes": [
     {
-      "route": "/api/ticket",
+      "route": "/api/get-ticket",
       "allowedRoles": ["reader"]
       
     },
@@ -11,7 +11,7 @@
       
     },
     {
-      "route": "/api/check",
+      "route": "/api/check-ticket",
       "allowedRoles": ["anonymous"]
       
     }

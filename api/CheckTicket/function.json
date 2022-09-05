@@ -6,10 +6,9 @@
       "direction": "in",
       "name": "req",
       "methods": [
-        "get",
-        "post"
+        "get"
       ],
-      "route": "get-ticket"
+      "route": "check-ticket"
     },
     {
       "type": "http",
@@ -22,7 +21,7 @@
       "direction": "in",
       "databaseName": "testswa",
       "collectionName": "eventi",
-      "sqlQuery": "SELECT c.biglietti FROM c",
+      "sqlQuery": "SELECT c.nome, c.biglietti FROM c",
       "connectionStringSetting": "CosmosDBConnection"    
     }
   ]
