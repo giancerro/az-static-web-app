@@ -20,7 +20,7 @@
       "name": "devices",
       "type": "cosmosDB",
       "direction": "in",
-      "databaseName": "testautomation",
+      "databaseName": "testswa",
       "collectionName": "eventi",
       "sqlQuery": "SELECT c.biglietti FROM c",
       "connectionStringSetting": "CosmosDBConnection"    
