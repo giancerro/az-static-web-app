@@ -9,7 +9,7 @@
         "get",
         "post"
       ],
-      "route": "device"
+      "route": "check"
     },
     {
       "type": "http",
