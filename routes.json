@@ -1,0 +1,27 @@
+{
+  "routes": [
+    {
+      "route": "/api/ticket",
+      "allowedRoles": ["reader"]
+      
+    },
+    {
+      "route": "/index2.html",
+      "allowedRoles": ["writer"]
+      
+    },
+    {
+      "route": "/api/check",
+      "allowedRoles": ["anonymous"]
+      
+    }
+
+    
+  ],
+  "responseOverrides": {
+    "401": {
+      "statusCode": 302,
+      "redirect": "/.auth/login/twitter"
+    }
+  }
+}
