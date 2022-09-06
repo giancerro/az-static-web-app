@@ -18,12 +18,6 @@
 
     
   ],
-  "responseOverrides": {
-    "401": {
-      "statusCode": 302,
-      "redirect": "/.auth/login/twitter"
-    }
-  },
   "networking": {
     "allowedIpRanges": ["AzureFrontDoor.Backend"]
   },
@@ -32,6 +26,7 @@
       "X-Azure-FDID" : "/subscriptions/69bdd4f5-a9c8-412d-b203-8f005d0c7855/resourcegroups/rg-testcerratti/providers/Microsoft.Cdn/profiles/FrontDoorLAB"
     },
     "allowedForwardedHosts": [
+      "swafrontdoor-dwb5f2cwh3f2byaf.z01.azurefd.net",
       "ccinfralab.com"
     ]
   }
