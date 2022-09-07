@@ -1,0 +1,21 @@
+{
+  "routes": [
+    {
+      "route": "/api/ticket",
+      "allowedRoles": ["reader"]
+      
+    },
+    {
+      "route": "/index2.html",
+      "allowedRoles": ["writer"]
+      
+    },
+    {
+      "route": "/api/check",
+      "allowedRoles": ["anonymous"]
+      
+    }
+
+    
+  ]
+}
