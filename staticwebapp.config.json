@@ -20,6 +20,15 @@
   ],
   "networking": {
     "allowedIpRanges": ["AzureFrontDoor.Backend"]
+  },
+  "forwardingGateway": {
+    "requiredHeaders": {
+      "X-Azure-FDID" : "/subscriptions/69bdd4f5-a9c8-412d-b203-8f005d0c7855/resourcegroups/rg-testcerratti/providers/Microsoft.Cdn/profiles/test-cdn"
+    },
+    "allowedForwardedHosts": [
+      "test-cdn-dgbhh2cvhwezgxfh.z01.azurefd.net",
+      "ccinfralab.com"
+     
+    ]
   }
-
 }
