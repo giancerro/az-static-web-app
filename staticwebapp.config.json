@@ -28,12 +28,6 @@
       "redirect": "/.auth/login/aad"
     }
   },
-  "responseOverrides": {
-    "402": {
-      "statusCode": 403,
-      "redirect": "https://ccinfralab.com"
-    }
-  },
   "networking": {
     "allowedIpRanges": ["AzureFrontDoor.Backend"]
   }
